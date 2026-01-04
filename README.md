@@ -283,6 +283,16 @@ This includes:
 
 All results can be reproduced locally by following the instructions below.
 
+## 📚 Learning & Self-Assessment
+
+This repository can also be used as a learning and interview-preparation resource.
+
+- Conceptual summary of consistency trade-offs
+- Self-assessment questions
+- Reference answers for validation
+
+See the [`learning/`](./learning) folder for details.
+
 ## ▶️ How to Run the Project
 
 ### Requirements
