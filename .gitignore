@@ -1,0 +1,30 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries (built with `go test -c`)
+*.test
+
+# Output of go tool cover
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories
+# Generally, vendor/ is ignored unless you specifically want to commit dependencies
+# vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Environment files
+.env
+
+# Editor/IDE specific (optional, but common)
+.idea/
+.vscode/

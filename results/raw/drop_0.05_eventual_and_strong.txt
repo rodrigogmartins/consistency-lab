@@ -1,0 +1,37 @@
+MODE: eventual
+duration: 15s | iterations: 1200
+
+WRITE
+  latency: p50 897.5µs | p95 2.1776ms | p99 2.9344ms | samples 1200
+  service_availability: 100.00% (http_resp=1200 net_err=0)
+  write_hit_rate_2xx:   100.00% (1200/1200)
+
+READ
+  latency: p50 658.6µs | p95 2.1034ms | p99 2.6224ms | samples 1200
+  service_availability: 100.00% (http_resp=1200 net_err=0)
+  read_hit_rate_200:    79.00% (948/1200)
+  stale_read_rate:      21.00% (252/1200)
+
+CONVERGENCE
+  time_to_visibility: p50 2.6023ms | p95 105.7113ms | samples 58
+
+
+======================
+
+
+MODE: strong
+duration: 15s | iterations: 1200
+
+WRITE
+  latency: p50 109.1952ms | p95 191.7658ms | p99 200.0879ms | samples 1200
+  service_availability: 100.00% (http_resp=1200 net_err=0)
+  write_hit_rate_2xx:   94.50% (1134/1200)
+
+READ
+  latency: p50 590.2µs | p95 1.3167ms | p99 2.8737ms | samples 1134
+  service_availability: 100.00% (http_resp=1134 net_err=0)
+  read_hit_rate_200:    100.00% (1134/1134)
+  stale_read_rate:      0.00% (0/1134)
+
+CONVERGENCE
+  time_to_visibility: p50 1.3092ms | p95 2.5405ms | samples 60
